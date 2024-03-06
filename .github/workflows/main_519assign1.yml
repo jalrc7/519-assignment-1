@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Node.js version
+      - name: Set up Node.js version 20
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -69,5 +69,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D61BDB884FC74947BF04B57304EB7B7E }}
+          publish-profile: ${{ secrets.SECRET }}
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
