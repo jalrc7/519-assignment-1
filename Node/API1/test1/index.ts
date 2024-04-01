@@ -8,7 +8,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     
     const formattedDate = today.toISOString().split('T')[0];
     const responseMessage = name
-        ? 'Hello,  ${name} . This HTTP triggered function executed successfully. Todays date is ${formattedDate}'
+        ?  "Hello, " + name + ". This HTTP triggered function executed successfully.Today's date is " +  formattedDate + "."
         : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
 
     context.res = {
