@@ -1,5 +1,5 @@
 {
-  "name": "assignment-1-jalrc7",
+  "name": "assign2",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -11,10 +11,10 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0-alpha.13"
+    "@azure/functions": "^4.3.0"
   },
   "devDependencies": {
-    "@types/node": "^18.x",
+    "@types/node": "^20.x",
     "rimraf": "^5.0.0",
     "typescript": "^4.0.0"
   },
