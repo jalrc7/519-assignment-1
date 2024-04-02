@@ -40,7 +40,7 @@ jobs:
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }}
+        creds: ${{ secrets.CONTAINER_SECRET }}
 
     - name: Deploy to Azure Container App
       uses: azure/container-apps-deploy-action@v1
