@@ -5,7 +5,7 @@ name: Build and deploy Node.js app to Azure Web App - 519assign1
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths:
       - "Node/WEB/**"
   workflow_dispatch:
