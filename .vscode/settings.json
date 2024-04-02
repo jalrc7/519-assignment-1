@@ -5,5 +5,8 @@
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 4,
-    "azureFunctions.preDeployTask": "npm prune (functions)"
+    "azureFunctions.preDeployTask": "npm prune (functions)",
+    "containerApps.deployWorkspaceProject.containerAppResourceGroupName": "assign2",
+    "containerApps.deployWorkspaceProject.containerAppName": "assignment-1-jalrc7",
+    "containerApps.deployWorkspaceProject.containerRegistryName": "assignment1jalrc7257deb"
 }

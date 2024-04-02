@@ -5,7 +5,9 @@ const port = process.env.PORT || 3000
 app.use('/', express.static('frontend/build'));
 
 app.get('/api', (req, res) => {
-  res.send('Hello, world!');
+  const secretValue = process.env.myAppSetting;  
+  const response = `Hello, world! ${secretValue || 'No secret found'}`;
+  res.send(responseText);
 });
 
 app.listen(port, () => {

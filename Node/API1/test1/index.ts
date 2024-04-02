@@ -5,7 +5,8 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     const name = (req.query.name || (req.body && req.body.name));
     const daysToAdd = parseInt(req.query.daysToAdd || "0", 10);
     const today = new Date();
-    
+    const secretValue = process.env.myAppSetting;
+    context.log(`Secret = ${secretValue}`);
     const formattedDate = today.toISOString().split('T')[0];
     const responseMessage = name
         ?  "Hello, " + name + ". This HTTP triggered function executed successfully.Today's date is " +  formattedDate + "."
