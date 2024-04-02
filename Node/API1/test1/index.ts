@@ -8,7 +8,9 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     const secretValue = process.env.myAppSetting;
     context.log(`Secret = ${secretValue}`);
     const formattedDate = today.toISOString().split('T')[0];
-    const responseMessage = name
+    const queueMessage = "Hello this is from queue";
+    context.bindings.outputQueueItem = queueMessage;
+    const responseMessage = "add to queue"
         ?  "Hello, " + name + ". This HTTP triggered function executed successfully.Today's date is " +  formattedDate + "."
         : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
 

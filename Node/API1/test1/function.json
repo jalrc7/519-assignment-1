@@ -14,6 +14,13 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "outputQueueItem",
+      "queueName": "assignment4queue", 
+      "connection": "StorageConnectionAppSetting" 
     }
   ],
   "scriptFile": "../dist/test1/index.js"
