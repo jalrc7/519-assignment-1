@@ -48,4 +48,4 @@ jobs:
         imageToDeploy: assignment1jalrc7257deb.azurecr.io/assignmentapp:v1.0
         containerAppName: assignment-1-jalrc7
         resourceGroup: 519assign1_group
-        environmentVariables: myStorageConnectionAppSetting=secretref:myStorageConnectionAppSetting
+        environmentVariables: myStorageConnectionAppSetting=secretref:storageconnectionstring
