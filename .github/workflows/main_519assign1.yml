@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: 519assign1
+  AZURE_WEBAPP_NAME: 519webapp
   AZURE_WEBAPP_PACKAGE_PATH: 'Node/WEB'
   FRONTEND_PACKAGE_PATH: 'Node/WEB/frontend'
   NODE_VERSION: '20.x'
